@@ -45,8 +45,8 @@ def preprocessing(DataSet):
 
     for image in DataSet:
         img = image.img
-        if len(img.shape) == 2:  # Check if the image is grayscale
-            img = cv2.cvtColor(img, cv2.COLOR_GRAY2BGR)  # Convert grayscale to BGR
+        if len(img.shape) == 2:
+            img = cv2.cvtColor(img, cv2.COLOR_GRAY2BGR)
 
         # Resize the image
         new_width, new_height = 300, 200
